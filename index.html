@@ -10,63 +10,66 @@
 </head>
 <body>
   <div class="container">
-    <!-- user input area -->
-    <div class="user-inputs">
-      <!-- first number input area  -->
-      <div class="first-number-area">
-        <div class="first-number-text">
-          first number
-        </div>
-        <div class="first-number-input">
-          <input type="text" id="first-number">
-        </div>
-      </div>
+    <form class="content">
 
-      <!-- second number input area -->
-      <div class="second-number-area">
-        <div class="second-number-text">
-          second number
+      <!-- user input area -->
+      <div class="user-inputs">
+        <!-- first number input area  -->
+        <div class="first-number-area">
+          <div class="first-number-text">
+            first number
+          </div>
+          <div class="first-number-input">
+            <input type="text" id="first-number">
+          </div>
         </div>
-        <div class="second-number-input">
-          <input type="text" id="second-number">
+  
+        <!-- second number input area -->
+        <div class="second-number-area">
+          <div class="second-number-text">
+            second number
+          </div>
+          <div class="second-number-input">
+            <input type="text" id="second-number">
+          </div>
         </div>
       </div>
-    </div>
-
-    <!-- operator area -->
-    <div class="operator-area">
-      <div class="add-operator">
-        <input type="radio" name="add" id="add">
-        Add
+  
+      <!-- operator area -->
+      <div class="operator-area">
+        <div class="add-operator">
+          <input type="radio" name="operator" value="add">
+          <label for="add">Add</label>
+        </div>
+        <div class="subtract-operator">
+          <input type="radio" name="operator" value="subtract">
+          <label for="subtract">Subtract</label>
+        </div>
+        <div class="multiply-operator">
+          <input type="radio" name="operator" value="multiply">
+          <label for="multiply">Multiply</label>
+        </div>
+        <div class="divide-operator">
+          <input type="radio" name="operator" value="divide">
+          <label for="divide">Divide</label>
+        </div>
       </div>
-      <div class="subtract-operator">
-        <input type="radio" name="subtract" id="subtract">
-        Subtract
+  
+      <!-- final operator area -->
+      <div class="final-operator-area">
+        <div class="equal">
+          <input type="button" value="=", id="equals">
+          <input type="button" value="Clear" id="clear">
+        </div>
       </div>
-      <div class="multiply-operator">
-        <input type="radio" name="multiply" id="multiply">
-        Multiply
+  
+      <!-- result area -->
+      <div class="result-area">
+        <div class="result-text">
+          Some result
+        </div>
       </div>
-      <div class="divide-operator">
-        <input type="radio" name="divide" id="divide">
-        Divide
-      </div>
-    </div>
-
-    <!-- final operator area -->
-    <div class="final-operator-area">
-      <div class="equal">
-        <input type="button" value="=">
-        <input type="button" value="Clear">
-      </div>
-    </div>
-
-    <!-- result area -->
-    <div class="result-area">
-      <div class="result-text">
-        Some result
-      </div>
-    </div>
+    </form>
   </div>
   
 </body>
