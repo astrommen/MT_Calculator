@@ -11,3 +11,6 @@ var getValue = ()=>{
 
 }
 
+var resetCalc = ()=> {
+  document.getElementById('content').reset();
+}
