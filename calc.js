@@ -30,6 +30,7 @@ let calc = () => {
   }
 
   console.log(result);
-  // let resultTest = document.getElementByID('result-text')
-  // resultTest.innerhtml = "The result of " + num1 + "and " + num2 + "= " + result;
+  resultText= document.getElementById('result-text');
+  resultText.innerHTML = "The result of " + num1 + " and " + num2 + " is " + result;
+  // console.log(resultTest)
 }
