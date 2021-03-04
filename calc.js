@@ -1,7 +1,3 @@
-// Todo
-// grab all number values from text input
-// grab value of operator value from radio btns
-// 
 var resetCalc = () => {
   document.getElementById('content').reset();
 }
@@ -13,24 +9,25 @@ let calc = () => {
   var operator = document.querySelector('input[name="operator"]:checked').value;
   let result = 0;
 
-  if (operator === "add") {
-    result = num1 + num2;
+  switch (operator) {
+    case "add":
+      result = num1 + num2;
+      break;
+
+    case "subtract":
+      result = num1 - num2;
+      break;
+    
+  
+    case "multiply":
+      result = num1 * num2;
+      break;
+  
+    case "divide":
+      result = num1 / num2;
+      break;
   }
 
-  else if (operator === "subtract") {
-    result = num1 - num2;
-  }
-
-  else if (operator === "multiply") {
-    result = num1 * num2;
-  }
-
-  else if (operator === "divide") {
-    result = num1 / num2;
-  }
-
-  console.log(result);
   resultText= document.getElementById('result-text');
   resultText.innerHTML = "The result of " + num1 + " and " + num2 + " is " + result;
-  // console.log(resultTest)
 }
